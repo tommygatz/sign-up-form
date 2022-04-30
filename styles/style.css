@@ -1,0 +1,26 @@
+:root{
+    --bgcolor: rgb(230, 227, 205);
+    --bgimg: url('../assets/bgimg1.jpg');
+
+}
+
+html{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body{
+    background-color: var(--bgcolor);
+    margin: 0;
+}
+
+#logo-section{
+    background-image: var(--bgimg);
+    background-size: cover;
+    width: min(40vw, 400px);
+    height: 100vh;
+    border: black 10px solid;
+    text-align: center;
+
+}
