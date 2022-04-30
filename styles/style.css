@@ -20,7 +20,14 @@ body{
     background-size: cover;
     width: min(40vw, 400px);
     height: 100vh;
-    border: black 10px solid;
-    text-align: center;
+    border: black 0px solid;
 
+}
+
+#credit{
+    position: absolute;
+    text-align: center;
+    color: white;
+    background-color: black;
+    bottom: 0;
 }
