@@ -63,7 +63,7 @@ a:visited {
 #logo {
     display: inherit;
     position: relative;
-    font-size: 3.5em;
+    font-size: clamp(1em, 5vw, 3.5em);
     color: white;
     height: auto;
     padding: .5em 0;
@@ -93,19 +93,18 @@ a:visited {
 }
 
 #top-section {
-    display: inherit;
-    position: relative;
+    display: flex;
     width: auto;
     height: 30vh;
     align-items: center ;
     justify-content: flex-start;
     padding-left: 100px;
-    font-size: max(min(0.5vw, 0.5em), 1rem);
+    font-size: 1em;
 }
 
 #form-section {
-    display: inherit;
-    width: 60vw;
+    display: flex;
+    width: auto;
     height: auto;
     padding: 50px 0px;
     box-shadow: 5px 5px 15px 0px black ;
@@ -122,8 +121,12 @@ a:visited {
 }
 
 form {
+    display: flex;
     width: inherit;
     height: inherit;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .input-wrap {
@@ -145,10 +148,12 @@ label, input {
     padding: .5em 1em;
     box-shadow: inset 0px 0px 2px black;
     font: inherit;
+    background-color: rgb(157, 207, 255);
 }
 
-input:focus {
-    background-color: aqua;
+.input-wrap > input:focus {
+    outline: none;
+    border: 1px solid rgb(255, 97, 255);
 }
 
 #bottom-section {
@@ -174,4 +179,5 @@ input:focus {
 
 #submitBtn:active {
     border: inset 1px;
+    background-color: rgb(209, 209, 209);
 }
