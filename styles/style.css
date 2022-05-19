@@ -143,7 +143,7 @@ label, input {
 }
 
 .input-wrap > input {
-    border: 1px black solid;
+    border: 1px rgb(95, 95, 95) solid;
     border-radius: 4px;
     padding: .5em 1em;
     box-shadow: inset 0px 0px 2px black;
